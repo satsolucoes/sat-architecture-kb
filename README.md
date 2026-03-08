@@ -12,7 +12,7 @@ O objetivo é que Claude (e qualquer colaborador) nunca comece do zero.
 ## Estrutura
 
 ```
-arch-kb/
+sat-architecture-kb/
 ├── principles/          # Princípios universais (stack-agnostic)
 ├── patterns/            # Padrões de solução abstratos validados
 ├── decisions/           # ADRs — Architecture Decision Records
