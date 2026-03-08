@@ -145,3 +145,10 @@ Acima dos thresholds: avaliar extração ou consolidação.
 
 - Origem: analysis-report.md (Hooks SRP, 2026-02-27)
 - Origem: refactoring-plan.md (Fase 3, 2026-02-27)
+
+### Links KB
+
+- Relacionado: [[derived-state-no-useeffect]]
+- Relacionado: [[hooks-patterns-and-antipatterns]]
+- Decisão: [[2026-02-27_hooks-separation-by-responsibility]]
+- Princípio: [[pragmatic-abstraction]]

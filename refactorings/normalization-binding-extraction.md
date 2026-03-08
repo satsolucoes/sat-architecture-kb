@@ -114,3 +114,11 @@ Em qualquer stack com event listeners ou observers:
 
 - Origem: refactoring-plan.md (Fase 1 — Fundação, 2026-02-23)
 - Origem: changelog-20260227 (redução de duplicação de scaling)
+
+### Links KB
+
+- Princípio: [[pragmatic-abstraction]]
+- Princípio: [[one-source-of-truth]]
+- Padrão: [[reentry-guard]]
+- Implementação TypeScript: [[reentry-guard-typescript]]
+- Decisão: [[2026-02-24_incremental-refactoring-never-big-bang]]

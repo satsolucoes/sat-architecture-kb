@@ -120,3 +120,9 @@ Uma abstração só é justificada se atender **pelo menos 2** dos seguintes **i
 ## Referências
 
 - Origem: 01_core_principles.md (Principles 1-5, 2026-02-27)
+
+### Links KB
+
+- Relacionado: [[pragmatic-abstraction]]
+- Relacionado: [[explicit-domain-rules-naming]]
+- Relacionado: [[documentation-as-first-class-artifact]]

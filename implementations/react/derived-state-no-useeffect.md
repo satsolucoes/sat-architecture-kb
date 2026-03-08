@@ -93,3 +93,9 @@ useEffect(() => {
 
 - Origem: changelog-20260227 (migração de useCanvasViewport para useReducer)
 - Origem: changelog-20260305 (correção de sincronização em usePilotiEditor)
+
+### Links KB
+
+- Relacionado: [[hooks-patterns-and-antipatterns]]
+- Relacionado: [[hooks-srp-usereducer-uselatest]]
+- Decisão: [[2026-02-27_hooks-separation-by-responsibility]]

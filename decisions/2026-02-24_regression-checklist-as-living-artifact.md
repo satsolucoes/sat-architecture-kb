@@ -111,3 +111,10 @@ Documentar falhas conhecidas e fora do escopo é tão importante quanto registra
 
 - Origem: regression-checklist.md (2026-02-24)
 - Origem: regression-run.md (2026-02-25)
+
+### Links KB
+
+- Princípio: [[stable-tests-before-refactoring]]
+- Decisão: [[2026-02-24_incremental-refactoring-never-big-bang]]
+- Relacionado: [[2026-03-04_smoke-test-naming-convention]]
+- Relacionado: [[2026-02-27_testing-strategy-adapted-pyramid]]

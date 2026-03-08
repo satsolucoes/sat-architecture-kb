@@ -65,3 +65,10 @@ house-auto-stairs.smoke.test.ts  # cobre ambos os cenários
 ## Referências
 
 - Origem: changelog-20260304 (padronização dos nomes dos describe)
+
+### Links KB
+
+- Princípio: [[stable-tests-before-refactoring]]
+- Decisão: [[2026-02-27_testing-strategy-adapted-pyramid]]
+- Relacionado: [[2026-02-24_regression-checklist-as-living-artifact]]
+- Implementação React: [[testing-strategy-react]]

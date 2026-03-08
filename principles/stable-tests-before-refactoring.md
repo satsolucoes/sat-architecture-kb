@@ -139,3 +139,9 @@ HTMLCanvasElement.prototype.getContext = vi.fn(() => ({
 - Origem: regression-checklist.md (2026-02-24)
 - Origem: regression-run.md (2026-02-25)
 - Origem: analysis-report.md (12 testes falhando, 2026-02-27)
+
+### Links KB
+
+- Relacionado: [[2026-02-24_incremental-refactoring-never-big-bang]]
+- Relacionado: [[2026-02-24_regression-checklist-as-living-artifact]]
+- Relacionado: [[god-object-detection-decomposition]]

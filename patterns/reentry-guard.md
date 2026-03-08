@@ -107,3 +107,9 @@ normalizeArrowScaling(obj):
 
 - Origem: refactoring-plan.md (Abstração de Padrões, 2026-02-23)
 - Origem: analysis-report.md (Duplicação detectada em 4 strategies, 2026-02-27)
+
+### Links KB
+
+- Princípio: [[pragmatic-abstraction]]
+- Relacionado: [[normalization-binding-extraction]]
+- Implementação TypeScript: [[reentry-guard-typescript]]

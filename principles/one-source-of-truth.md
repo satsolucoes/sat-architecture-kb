@@ -85,3 +85,8 @@ export const APP_SETTINGS_DEFAULTS = {
 
 - Origem: changelog-20260227 (padronização de código e constantes)
 - Origem: changelog-20260303 (padronização de tolerância numérica)
+
+### Links KB
+
+- Relacionado: [[pragmatic-abstraction]]
+- Relacionado: [[explicit-domain-rules-naming]]

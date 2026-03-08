@@ -125,3 +125,11 @@ interface HousePersistencePort {
 
 - Origem: 03_project_structure.md (2026-02-27)
 - Origem: 06_hooks_and_state.md (2026-02-27)
+
+### Links KB
+
+- Princípio: [[pragmatic-abstraction]]
+- Princípio: [[explicit-domain-rules-naming]]
+- Relacionado: [[port-adapter-persistence]]
+- Relacionado: [[strategy-registry-by-type]]
+- Implementação React: [[clean-architecture-react]]

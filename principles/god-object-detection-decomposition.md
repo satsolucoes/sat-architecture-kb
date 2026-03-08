@@ -115,3 +115,10 @@ O God Object foi decomposto quando:
 
 - Origem: analysis-report.md (God Component RacEditor.tsx, 2026-02-27)
 - Origem: refactoring-plan.md (Fase 4 — Desacoplamento, 2026-02-26)
+
+### Links KB
+
+- Princípio: [[pragmatic-abstraction]]
+- Princípio: [[stable-tests-before-refactoring]]
+- Decisão: [[2026-02-24_incremental-refactoring-never-big-bang]]
+- Decisão: [[2026-02-23_incremental-refactoring-phases]]

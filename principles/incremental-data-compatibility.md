@@ -106,3 +106,8 @@ describe('House format compatibility', () => {
 ## Referências
 
 - Origem: 01_core_principles.md (Principle 7: Incremental Compatibility)
+
+### Links KB
+
+- Relacionado: [[precise-automation-triggers]]
+- Relacionado: [[incremental-refactoring-never-big-bang]]

@@ -73,3 +73,10 @@ const arrowActions = useArrowEditorActions();
 ## Referências
 
 - Origem: changelog-20260227 (refatoração incremental + correções Linha/Seta)
+
+### Links KB
+
+- Princípio: [[pragmatic-abstraction]]
+- Relacionado: [[derived-state-no-useeffect]]
+- Relacionado: [[hooks-srp-usereducer-uselatest]]
+- Relacionado: [[hooks-patterns-and-antipatterns]]

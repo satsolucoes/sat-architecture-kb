@@ -70,3 +70,8 @@ Criar e manter artefatos de documentação explícitos:
 
 - Origem: changelog-20260227 (.guidelines / padrões arquiteturais)
 - Origem: changelog-20260304 (documentação, guideline de testes)
+
+### Links KB
+
+- Princípio: [[mandatory-decision-flow]]
+- Relacionado: [[2026-02-27_code-templates-by-artifact]]

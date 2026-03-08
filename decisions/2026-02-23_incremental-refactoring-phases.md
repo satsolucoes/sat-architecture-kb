@@ -102,3 +102,9 @@ Toda refatoração significativa deve ser dividida em fases com:
 
 - Origem: refactoring-plan 2026-02-23 (plano em 5 fases)
 - Origem: refactoring-plan 2026-02-27 (plano dinâmico pós-análise)
+
+### Links KB
+
+- Princípio: [[stable-tests-before-refactoring]]
+- Decisão: [[2026-02-24_incremental-refactoring-never-big-bang]]
+- Relacionado: [[god-object-detection-decomposition]]

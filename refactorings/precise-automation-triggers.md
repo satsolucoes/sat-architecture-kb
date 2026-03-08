@@ -95,3 +95,9 @@ function reconcileAutoContraventamento(house: House): void {
 ## Referências
 
 - Origem: changelog-20260305 (Auto Contraventamento no commit de nível)
+
+### Links KB
+
+- Princípio: [[explicit-domain-rules-naming]]
+- Princípio: [[one-source-of-truth]]
+- Relacionado: [[incremental-data-compatibility]]

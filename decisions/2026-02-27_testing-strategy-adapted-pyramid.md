@@ -118,3 +118,10 @@ Usar seletores semânticos (role, label) como padrão tem duplo benefício:
 
 - Origem: 08_testing.md (2026-02-27)
 - Relacionado: decisions/2026-03-04_smoke-test-naming-convention.md
+
+### Links KB
+
+- Princípio: [[stable-tests-before-refactoring]]
+- Relacionado: [[2026-03-04_smoke-test-naming-convention]]
+- Relacionado: [[2026-02-24_regression-checklist-as-living-artifact]]
+- Implementação React: [[testing-strategy-react]]

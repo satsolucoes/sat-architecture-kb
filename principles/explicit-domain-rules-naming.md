@@ -67,3 +67,9 @@ independentemente.
 ## Referências
 
 - Origem: changelog-20260303 (correção de regressão no auto contraventamento)
+
+### Links KB
+
+- Relacionado: [[pragmatic-abstraction]]
+- Relacionado: [[one-source-of-truth]]
+- Padrão: [[clean-architecture-layers]]

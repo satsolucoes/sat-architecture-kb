@@ -127,3 +127,10 @@ function UserCardContainer({ userId }: { userId: string }) {
 - Origem: 05_component_patterns.md (2026-02-27)
 - Origem: 06_hooks_and_state.md (2026-02-27)
 - Origem: implementations/react/hooks-srp-usereducer-uselatest.md
+
+### Links KB
+
+- Relacionado: [[derived-state-no-useeffect]]
+- Relacionado: [[hooks-srp-usereducer-uselatest]]
+- Decisão: [[2026-02-27_hooks-separation-by-responsibility]]
+- Relacionado: [[uselatest-pattern]]

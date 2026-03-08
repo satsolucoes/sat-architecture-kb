@@ -97,3 +97,9 @@ PRs maiores que isso: considerar dividir em múltiplos PRs sequenciais.
 - Origem: regression-checklist.md (mega refactoring 2026-02-24)
 - Origem: regression-run.md (correções pós-refactoring 2026-02-25)
 - Origem: refactoring-plan.md (plano em fases 2026-02-27)
+
+### Links KB
+
+- Princípio: [[stable-tests-before-refactoring]]
+- Relacionado: [[2026-02-23_incremental-refactoring-phases]]
+- Relacionado: [[2026-02-24_regression-checklist-as-living-artifact]]

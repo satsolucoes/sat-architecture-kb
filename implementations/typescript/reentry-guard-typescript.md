@@ -116,3 +116,8 @@ describe('withReentryGuard (smoke)', () => {
 - Padrão base: patterns/reentry-guard.md
 - Origem: refactoring-plan.md (2026-02-23)
 - Origem: analysis-report.md (duplicação detectada em 4 strategies)
+
+### Links KB
+
+- Padrão base: [[reentry-guard]]
+- Relacionado: [[normalization-binding-extraction]]

@@ -89,3 +89,10 @@ Troca de adaptador sem tocar no domínio.
 ## Referências
 
 - Origem: changelog-20260227 (Discussão arquitetural e decisões finais)
+
+### Links KB
+
+- Princípio: [[pragmatic-abstraction]]
+- Relacionado: [[clean-architecture-layers]]
+- Relacionado: [[strategy-registry-by-type]]
+- Implementação React: [[clean-architecture-react]]

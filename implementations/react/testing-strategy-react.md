@@ -150,3 +150,9 @@ it('should work', () => { expect(true).toBe(true); });
 - Decisão base: decisions/2026-02-27_testing-strategy-adapted-pyramid.md
 - Origem: 08_testing.md (2026-02-27)
 - Relacionado: decisions/2026-03-04_smoke-test-naming-convention.md
+
+### Links KB
+
+- Decisão base: [[2026-02-27_testing-strategy-adapted-pyramid]]
+- Relacionado: [[2026-03-04_smoke-test-naming-convention]]
+- Relacionado: [[stable-tests-before-refactoring]]

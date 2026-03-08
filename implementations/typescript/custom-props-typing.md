@@ -77,3 +77,8 @@ function toCanvasObject(
 ## Referências
 
 - Origem: changelog-20260227 (CanvasObject / customProps)
+
+### Links KB
+
+- Princípio: [[explicit-domain-rules-naming]]
+- Relacionado: [[2026-02-27_code-templates-by-artifact]]

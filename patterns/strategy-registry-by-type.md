@@ -83,3 +83,10 @@ return getHouseViewStrategy(viewType, factories).create(canvas, { side });
 ## Referências
 
 - Origem: changelog-20260227 (House Factory Strategies)
+
+### Links KB
+
+- Princípio: [[pragmatic-abstraction]]
+- Princípio: [[explicit-domain-rules-naming]]
+- Relacionado: [[clean-architecture-layers]]
+- Relacionado: [[port-adapter-persistence]]

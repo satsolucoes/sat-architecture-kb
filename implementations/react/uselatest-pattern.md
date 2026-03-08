@@ -104,3 +104,8 @@ function useContraventamentoRefs(props: Props) {
 ## Referências
 
 - Origem: analysis-report 2026-02-27 (9 useEffects em useContraventamentoRefs)
+
+### Links KB
+
+- Relacionado: [[hooks-srp-usereducer-uselatest]]
+- Relacionado: [[hooks-patterns-and-antipatterns]]

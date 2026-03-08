@@ -78,3 +78,10 @@ function getMinimumPilotiHeightForNivel(nivel: number) {
 
 - Decisão original: changelog-20260227 (Discussão arquitetural e decisões finais)
 - Anti-padrão registrado: changelog-20260303 (diretriz de simplicidade)
+
+### Links KB
+
+- Relacionado: [[explicit-domain-rules-naming]]
+- Relacionado: [[mandatory-decision-flow]]
+- Relacionado: [[one-source-of-truth]]
+- Padrão: [[clean-architecture-layers]]

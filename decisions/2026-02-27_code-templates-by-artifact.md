@@ -192,3 +192,9 @@ describe('{Component}', () => {
 
 - Origem: templates HBS (aggregate, component, hook, page, persistence, use-case, tests)
 - Origem: 04_naming_conventions.md (2026-02-27)
+
+### Links KB
+
+- Padrão: [[clean-architecture-layers]]
+- Princípio: [[explicit-domain-rules-naming]]
+- Implementação React: [[clean-architecture-react]]

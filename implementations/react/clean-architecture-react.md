@@ -161,3 +161,9 @@ export const houseStore = new HouseStateStore();
 - Padrão base: patterns/clean-architecture-layers.md
 - Origem: 03_project_structure.md, 04_naming_conventions.md (2026-02-27)
 - Templates: aggregate_ts.hbs, persistence-port_ts.hbs, persistence-adapter_ts.hbs, use-case_ts.hbs
+
+### Links KB
+
+- Padrão base: [[clean-architecture-layers]]
+- Relacionado: [[2026-02-27_code-templates-by-artifact]]
+- Relacionado: [[port-adapter-persistence]]
