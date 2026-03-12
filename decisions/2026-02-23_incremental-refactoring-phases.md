@@ -49,7 +49,7 @@ Toda refatoração significativa deve ser dividida em fases com:
 **Objetivo:** Remover ruído do código sem risco
 **Tarefas:**
   - [ ] Corrigir typos em nomes de arquivo
-  - [ ] Remover console.logs de produção
+  - [ ] Remover logs de debug em produção
   - [ ] Centralizar magic numbers em constants
 **Commit:** `chore: apply quick wins`
 **Critério de aceite:** lint limpo, testes verdes
@@ -58,18 +58,18 @@ Toda refatoração significativa deve ser dividida em fases com:
 ### Fase 3: Padrões e Abstrações (Médio prazo)
 **Objetivo:** Eliminar duplicação estrutural
 **Tarefas:**
-  - [ ] Extrair scaling guard genérico
-  - [ ] Aplicar nas 4 strategies afetadas
-**Commit:** `refactor(factory): abstract scaling guard`
-**Critério de aceite:** -30 linhas, testes verdes
+  - [ ] Extrair padrão duplicado em helper genérico
+  - [ ] Aplicar em todos os pontos afetados
+**Commit:** `refactor(shared): extract reusable pattern`
+**Critério de aceite:** -N linhas de duplicação, testes verdes
 **Entregável:** um ponto de manutenção para o padrão
 
 ### Fase 4: Arquitetura (Longo prazo)
-**Objetivo:** Atacar complexity estrutural
+**Objetivo:** Atacar complexidade estrutural
 **Tarefas:**
   - [ ] Decompor God Component gradualmente
-  - [ ] Migrar viewport para useReducer
-**Commit:** `refactor(editor): extract editor state hooks`
+  - [ ] Migrar estado acumulado para useReducer
+**Commit:** `refactor(feature): extract state hooks`
 **Critério de aceite:** componente < 400 linhas, testes verdes
 **Entregável:** componente orquestrador, não acumulador
 ```
@@ -88,7 +88,7 @@ Toda refatoração significativa deve ser dividida em fases com:
 - tsc --noEmit → PASS (sem erros novos introduzidos)
 - npm test → 100% passando
 - npm run build → PASS
-- E2E serial → 100% passando
+- E2E → 100% passando
 - lint nos arquivos alterados → sem erros
 ```
 
@@ -99,9 +99,6 @@ Toda refatoração significativa deve ser dividida em fases com:
 - O commit sugerido não consegue ser descrito em uma linha semântica
 
 ## Referências
-
-- Origem: refactoring-plan 2026-02-23 (plano em 5 fases)
-- Origem: refactoring-plan 2026-02-27 (plano dinâmico pós-análise)
 
 ### Links KB
 

@@ -1,0 +1,8 @@
+.idea/
+
+# Claude AI agent — específico do desenvolvedor
+.claude/
+
+# Obsidian — estado pessoal da sessão
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json

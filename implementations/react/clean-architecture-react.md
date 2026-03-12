@@ -1,10 +1,10 @@
 ---
 type: implementation
-title: Clean Architecture — implementação React/TypeScript/Vite
+title: Clean Architecture — implementação React/TypeScript
 status: active
 impact: high
 date: 2026-02-27
-tags: [clean-architecture, react, typescript, vite, hooks, context]
+tags: [clean-architecture, react, typescript, hooks, context]
 applies_to:
   stacks: [react, typescript]
   contexts: [architecture, project-structure, scaffolding]
@@ -12,7 +12,7 @@ parent_pattern: patterns/clean-architecture-layers.md
 outcome: validated
 ---
 
-## Estrutura de pastas (React/Vite)
+## Estrutura de pastas (React/TypeScript)
 
 ```
 src/
@@ -25,8 +25,8 @@ src/
 ├── infra/
 │   ├── persistence/
 │   │   └── in-memory-{model}-persistence-adapter.ts
-│   └── canvas/          ← libs de canvas SOMENTE aqui
-│       └── fabric-canvas-adapter.ts
+│   └── {concern}/          ← libs externas SOMENTE aqui
+│       └── {concern}-adapter.ts
 ├── components/
 │   └── {feature}/
 │       ├── ui/          ← componentes presentacionais
@@ -43,7 +43,7 @@ src/
 |--------------|-----------------------------------------|----------|
 | Agregado     | `{model}-aggregate`                     | `.ts`    |
 | Port         | `{model}-{concern}-port`                | `.ts`    |
-| Adapter      | `in-memory-{model}-persistence-adapter` | `.ts`    |
+| Adapter      | `in-memory-{model}-{concern}-adapter`   | `.ts`    |
 | Use Case     | `{action}.use-case`                     | `.ts`    |
 | Strategy     | `{element}.strategy`                    | `.ts`    |
 | Componente   | PascalCase                              | `.tsx`   |
@@ -116,12 +116,12 @@ export function {action}UseCase(persistence: {Model}PersistencePort) {
 ### Bootstrap (wiring)
 
 ```typescript
-// src/bootstrap/editor-bootstrap.ts
+// src/bootstrap/{feature}-bootstrap.ts
 const persistence = createInMemory{Model}PersistenceAdapter();
 const load{Model} = {action}UseCase(persistence);
 
 // ✅ injetar via Context — nunca exportar como singleton
-export function createEditorDependencies() {
+export function create{Feature}Dependencies() {
   return { persistence, load{Model} };
 }
 ```
@@ -130,19 +130,19 @@ export function createEditorDependencies() {
 
 ```typescript
 // ✅ Criado no bootstrap, injetado via Context
-const store = createHouseStateStore(persistence);
+const store = create{Model}Store(persistence);
 
 // ❌ Singleton global — PROIBIDO
-export const houseStore = new HouseStateStore();
+export const {model}Store = new {Model}Store();
 ```
 
-## Restrições específicas desta stack
+## Restrições desta stack
 
 ```
-❌ Não importar 'fabric' fora de src/infra/canvas/
+❌ Não importar libs externas de infraestrutura fora de src/infra/
 ❌ Não criar src/services/ genérico na raiz
 ❌ Não usar src/shared/ para regras de negócio
-❌ Não tratar canvas como fonte de verdade do estado
+❌ Não tratar infra como fonte de verdade do estado de domínio
 ❌ strict: false no tsconfig é estado transitório — escrever código defensivo mesmo assim
 ```
 
@@ -152,15 +152,11 @@ export const houseStore = new HouseStateStore();
 □ Auditei a base de código com rg/grep?
 □ O artefato pertence à camada correta?
 □ O nome segue a convenção da tabela acima?
-□ Não estou importando para a direção errada?
+□ Não estou importando na direção errada (infra → domínio)?
 □ Criei smoke test co-localizado?
 ```
 
 ## Referências
-
-- Padrão base: patterns/clean-architecture-layers.md
-- Origem: 03_project_structure.md, 04_naming_conventions.md (2026-02-27)
-- Templates: aggregate_ts.hbs, persistence-port_ts.hbs, persistence-adapter_ts.hbs, use-case_ts.hbs
 
 ### Links KB
 

@@ -1,6 +1,6 @@
 {
-  "version": "1.2.0",
-  "lastUpdated": "2026-03-08",
+  "version": "1.4.0",
+  "lastUpdated": "2026-03-10",
   "owner": "Felipe Desiderati",
   "entries": [
     {
@@ -8,22 +8,9 @@
       "type": "principle",
       "title": "Abstrações com ganho real (Pragmatic Abstraction)",
       "path": "principles/pragmatic-abstraction.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "clean-architecture",
-        "SOLID",
-        "abstraction",
-        "pragmatism"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "architecture",
-        "design",
-        "refactoring"
-      ],
+      "status": "active", "impact": "high",
+      "tags": ["clean-architecture", "SOLID", "abstraction", "pragmatism"],
+      "stacks": ["universal"], "contexts": ["architecture", "design", "refactoring"],
       "date": "2026-02-27"
     },
     {
@@ -31,23 +18,9 @@
       "type": "principle",
       "title": "Separação explícita de regras de domínio com nomes distintos",
       "path": "principles/explicit-domain-rules-naming.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "SOLID",
-        "clean-code",
-        "domain",
-        "naming",
-        "single-responsibility"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "domain",
-        "business-rules",
-        "naming"
-      ],
+      "status": "active", "impact": "high",
+      "tags": ["SOLID", "clean-code", "domain", "naming", "single-responsibility"],
+      "stacks": ["universal"], "contexts": ["domain", "business-rules", "naming"],
       "date": "2026-03-03"
     },
     {
@@ -55,22 +28,9 @@
       "type": "principle",
       "title": "One Source of Truth — constantes, estilos e configurações",
       "path": "principles/one-source-of-truth.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "clean-code",
-        "constants",
-        "DRY",
-        "maintainability"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "architecture",
-        "configuration",
-        "constants"
-      ],
+      "status": "active", "impact": "high",
+      "tags": ["clean-code", "constants", "DRY", "maintainability"],
+      "stacks": ["universal"], "contexts": ["architecture", "configuration", "constants"],
       "date": "2026-02-27"
     },
     {
@@ -78,23 +38,9 @@
       "type": "principle",
       "title": "God Object — detecção, riscos e decomposição gradual",
       "path": "principles/god-object-detection-decomposition.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "SOLID",
-        "single-responsibility",
-        "god-object",
-        "refactoring",
-        "complexity"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "architecture",
-        "refactoring",
-        "component-design"
-      ],
+      "status": "active", "impact": "high",
+      "tags": ["SOLID", "single-responsibility", "god-object", "refactoring", "complexity"],
+      "stacks": ["universal"], "contexts": ["architecture", "refactoring", "component-design"],
       "date": "2026-02-27"
     },
     {
@@ -102,23 +48,9 @@
       "type": "principle",
       "title": "Suíte de testes estável é pré-condição para qualquer refactoring",
       "path": "principles/stable-tests-before-refactoring.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "testing",
-        "refactoring",
-        "safety",
-        "regression",
-        "CI-CD"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "testing",
-        "refactoring",
-        "process"
-      ],
+      "status": "active", "impact": "high",
+      "tags": ["testing", "refactoring", "safety", "regression", "CI-CD"],
+      "stacks": ["universal"], "contexts": ["testing", "refactoring", "process"],
       "date": "2026-02-24"
     },
     {
@@ -126,24 +58,9 @@
       "type": "principle",
       "title": "Mandatory Decision Flow — fluxo obrigatório antes de escrever qualquer código",
       "path": "principles/mandatory-decision-flow.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "process",
-        "architecture",
-        "reuse",
-        "decision-making",
-        "SOLID"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "architecture",
-        "process",
-        "team",
-        "refactoring"
-      ],
+      "status": "active", "impact": "high",
+      "tags": ["process", "architecture", "reuse", "decision-making", "SOLID"],
+      "stacks": ["universal"], "contexts": ["architecture", "process", "team", "refactoring"],
       "date": "2026-02-27"
     },
     {
@@ -151,23 +68,9 @@
       "type": "principle",
       "title": "Compatibilidade incremental em mudanças de formato de dados",
       "path": "principles/incremental-data-compatibility.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "migration",
-        "data",
-        "compatibility",
-        "serialization",
-        "backward-compatibility"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "data-migration",
-        "serialization",
-        "persistence"
-      ],
+      "status": "active", "impact": "high",
+      "tags": ["migration", "data", "compatibility", "serialization", "backward-compatibility"],
+      "stacks": ["universal"], "contexts": ["data-migration", "serialization", "persistence"],
       "date": "2026-02-27"
     },
     {
@@ -175,22 +78,9 @@
       "type": "pattern",
       "title": "Port/Adapter para persistência",
       "path": "patterns/port-adapter-persistence.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "clean-architecture",
-        "port-adapter",
-        "persistence",
-        "hexagonal"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "architecture",
-        "persistence",
-        "domain"
-      ],
+      "status": "active", "impact": "high",
+      "tags": ["clean-architecture", "port-adapter", "persistence", "hexagonal"],
+      "stacks": ["universal"], "contexts": ["architecture", "persistence", "domain"],
       "date": "2026-02-27"
     },
     {
@@ -198,72 +88,59 @@
       "type": "pattern",
       "title": "Strategy Pattern para criação de elementos por tipo",
       "path": "patterns/strategy-registry-by-type.md",
-      "status": "active",
-      "impact": "medium",
-      "tags": [
-        "design-patterns",
-        "strategy",
-        "factory",
-        "open-closed"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "factory",
-        "design-patterns",
-        "extensibility"
-      ],
+      "status": "active", "impact": "medium",
+      "tags": ["design-patterns", "strategy", "factory", "open-closed"],
+      "stacks": ["universal"], "contexts": ["factory", "design-patterns", "extensibility"],
       "date": "2026-02-27"
     },
     {
       "id": "reentry-guard",
       "type": "pattern",
-      "title": "Reentry Guard — proteção contra recursão em callbacks",
-      "path": "patterns/scaling-guard-pattern.md",
-      "status": "active",
-      "impact": "medium",
-      "tags": [
-        "design-patterns",
-        "recursion-guard",
-        "DRY",
-        "event-handlers",
-        "callbacks"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "canvas",
-        "transformation",
-        "event-handlers"
-      ],
-      "date": "2026-02-23",
-      "file": "patterns/reentry-guard.md"
+      "title": "Reentry Guard — proteção contra recursão em callbacks de transformação",
+      "path": "patterns/reentry-guard.md",
+      "status": "active", "impact": "medium",
+      "tags": ["design-patterns", "recursion-guard", "DRY", "event-handlers", "callbacks"],
+      "stacks": ["universal"], "contexts": ["canvas", "animation", "transformation", "event-handlers", "observers"],
+      "date": "2026-02-23"
     },
     {
       "id": "clean-architecture-layers",
       "type": "pattern",
       "title": "Clean Architecture — estrutura de camadas, fluxo de dependência e nomenclatura",
       "path": "patterns/clean-architecture-layers.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "clean-architecture",
-        "layers",
-        "dependency-flow",
-        "naming",
-        "domain",
-        "infra"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "architecture",
-        "project-structure",
-        "naming"
-      ],
+      "status": "active", "impact": "high",
+      "tags": ["clean-architecture", "layers", "dependency-flow", "naming", "domain", "infra"],
+      "stacks": ["universal"], "contexts": ["architecture", "project-structure", "naming"],
+      "date": "2026-02-27"
+    },
+    {
+      "id": "domain-aggregate-root",
+      "type": "pattern",
+      "title": "Domain Aggregate — estado de domínio centralizado em classe raiz",
+      "path": "patterns/domain-aggregate-root.md",
+      "status": "active", "impact": "high",
+      "tags": ["clean-architecture", "aggregate", "domain", "use-cases", "testability", "generic-types"],
+      "stacks": ["universal"], "contexts": ["architecture", "domain", "testing"],
+      "date": "2026-03-08"
+    },
+    {
+      "id": "config-centralized-by-domain",
+      "type": "pattern",
+      "title": "Config centralizado — constantes agrupadas por domínio em shared/config.ts",
+      "path": "patterns/config-centralized-by-domain.md",
+      "status": "active", "impact": "high",
+      "tags": ["constants", "DRY", "one-source-of-truth", "config", "as-const"],
+      "stacks": ["universal"], "contexts": ["architecture", "configuration", "constants"],
+      "date": "2026-03-08"
+    },
+    {
+      "id": "uselatest-pattern",
+      "type": "pattern",
+      "title": "useLatest — sincronização de props com refs sem múltiplos useEffects",
+      "path": "implementations/react/uselatest-pattern.md",
+      "status": "active", "impact": "medium",
+      "tags": ["react", "hooks", "useEffect", "refs", "performance", "SRP"],
+      "stacks": ["react", "react-native"], "contexts": ["hooks", "state-management", "performance"],
       "date": "2026-02-27"
     },
     {
@@ -271,25 +148,9 @@
       "type": "refactoring",
       "title": "Estado derivado não vive em useEffect",
       "path": "implementations/react/derived-state-no-useeffect.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "react",
-        "hooks",
-        "useEffect",
-        "useMemo",
-        "useReducer",
-        "derived-state"
-      ],
-      "stacks": [
-        "react",
-        "react-native"
-      ],
-      "contexts": [
-        "state-management",
-        "hooks",
-        "performance"
-      ],
+      "status": "active", "impact": "high",
+      "tags": ["react", "hooks", "useEffect", "useMemo", "useReducer", "derived-state"],
+      "stacks": ["react", "react-native"], "contexts": ["state-management", "hooks", "performance"],
       "date": "2026-02-27"
     },
     {
@@ -297,25 +158,9 @@
       "type": "refactoring",
       "title": "Hooks com SRP — useReducer para estado relacionado, useLatest para refs",
       "path": "implementations/react/hooks-srp-usereducer-uselatest.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "react",
-        "hooks",
-        "SRP",
-        "useReducer",
-        "useEffect",
-        "refs"
-      ],
-      "stacks": [
-        "react",
-        "react-native"
-      ],
-      "contexts": [
-        "hooks",
-        "state-management",
-        "architecture"
-      ],
+      "status": "active", "impact": "high",
+      "tags": ["react", "hooks", "SRP", "useReducer", "useEffect", "refs"],
+      "stacks": ["react", "react-native"], "contexts": ["hooks", "state-management", "architecture"],
       "date": "2026-02-27"
     },
     {
@@ -323,72 +168,69 @@
       "type": "refactoring",
       "title": "Hooks — responsabilidades, hierarquia de estado e anti-padrões",
       "path": "implementations/react/hooks-patterns-and-antipatterns.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "react",
-        "hooks",
-        "state-management",
-        "architecture",
-        "SRP",
-        "context"
-      ],
-      "stacks": [
-        "react",
-        "react-native"
-      ],
-      "contexts": [
-        "hooks",
-        "state-management",
-        "component-design"
-      ],
+      "status": "active", "impact": "high",
+      "tags": ["react", "hooks", "state-management", "architecture", "SRP", "context"],
+      "stacks": ["react", "react-native"], "contexts": ["hooks", "state-management", "component-design"],
       "date": "2026-02-27"
+    },
+    {
+      "id": "god-hook-decomposition-by-domain",
+      "type": "refactoring",
+      "title": "God Hook — decomposição por domínio funcional em subpastas",
+      "path": "refactorings/god-hook-decomposition-by-domain.md",
+      "status": "active", "impact": "high",
+      "tags": ["react", "hooks", "SRP", "decomposition", "god-object", "refactoring"],
+      "stacks": ["react", "react-native"], "contexts": ["hooks", "refactoring", "component-design"],
+      "date": "2026-03-08"
+    },
+    {
+      "id": "generic-type-domain-decoupling",
+      "type": "refactoring",
+      "title": "Generic Type Parameter — desacoplando domínio de infraestrutura visual",
+      "path": "implementations/react/generic-type-domain-decoupling.md",
+      "status": "active", "impact": "high",
+      "tags": ["typescript", "generics", "domain", "decoupling", "testability", "clean-architecture"],
+      "stacks": ["typescript", "react"], "contexts": ["domain", "typing", "architecture"],
+      "date": "2026-03-08"
+    },
+    {
+      "id": "resilient-localstorage-with-defaults",
+      "type": "refactoring",
+      "title": "Storage resiliente — leitura com defaults e silent fail na escrita",
+      "path": "implementations/react/resilient-localstorage-with-defaults.md",
+      "status": "active", "impact": "medium",
+      "tags": ["localStorage", "resilience", "defaults", "infra", "settings", "silent-fail"],
+      "stacks": ["react", "typescript"], "contexts": ["persistence", "infra", "resilience"],
+      "date": "2026-03-08"
     },
     {
       "id": "custom-props-typing",
       "type": "refactoring",
       "title": "Tipagem forte para propriedades custom em objetos de terceiros",
       "path": "implementations/typescript/custom-props-typing.md",
-      "status": "active",
-      "impact": "medium",
-      "tags": [
-        "typescript",
-        "typing",
-        "type-safety",
-        "third-party"
-      ],
-      "stacks": [
-        "typescript",
-        "javascript"
-      ],
-      "contexts": [
-        "typing",
-        "third-party-integration"
-      ],
+      "status": "active", "impact": "medium",
+      "tags": ["typescript", "typing", "type-safety", "third-party"],
+      "stacks": ["typescript", "javascript"], "contexts": ["typing", "third-party-integration"],
       "date": "2026-02-27"
+    },
+    {
+      "id": "reentry-guard-typescript",
+      "type": "refactoring",
+      "title": "Reentry Guard — implementação TypeScript com generics",
+      "path": "implementations/typescript/reentry-guard-typescript.md",
+      "status": "active", "impact": "medium",
+      "tags": ["typescript", "recursion-guard", "generics", "DRY", "canvas", "fabric"],
+      "stacks": ["typescript"], "contexts": ["canvas", "transformation", "event-handlers"],
+      "date": "2026-02-23"
     },
     {
       "id": "normalization-binding-extraction",
       "type": "refactoring",
       "title": "Extração de funções de normalização e binding por tipo",
       "path": "refactorings/normalization-binding-extraction.md",
-      "status": "active",
-      "impact": "medium",
-      "tags": [
-        "refactoring",
-        "DRY",
-        "factory",
-        "normalization",
-        "testability"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "factory",
-        "refactoring",
-        "transformation"
-      ],
+      "status": "active", "impact": "medium",
+      "tags": ["refactoring", "DRY", "factory", "normalization", "testability"],
+      "stacks": ["universal"], "contexts": ["factory", "refactoring", "transformation"],
       "date": "2026-02-23"
     },
     {
@@ -396,45 +238,29 @@
       "type": "refactoring",
       "title": "Automações com gatilhos precisos — evitar disparo global genérico",
       "path": "refactorings/precise-automation-triggers.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "automation",
-        "state-management",
-        "side-effects",
-        "precision"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "automation",
-        "state-management",
-        "events"
-      ],
+      "status": "active", "impact": "high",
+      "tags": ["automation", "state-management", "side-effects", "precision"],
+      "stacks": ["universal"], "contexts": ["automation", "state-management", "events"],
       "date": "2026-03-05"
+    },
+    {
+      "id": "incremental-refactoring-phases",
+      "type": "decision",
+      "title": "Refactoring incremental em fases com critérios de aceite explícitos",
+      "path": "decisions/2026-02-23_incremental-refactoring-phases.md",
+      "status": "active", "impact": "high",
+      "tags": ["refactoring", "process", "incremental", "safety", "planning"],
+      "stacks": ["universal"], "contexts": ["process", "refactoring", "planning", "governance"],
+      "date": "2026-02-23"
     },
     {
       "id": "hooks-separation-by-responsibility",
       "type": "decision",
       "title": "Separação de hooks por responsabilidade",
       "path": "decisions/2026-02-27_hooks-separation-by-responsibility.md",
-      "status": "active",
-      "impact": "medium",
-      "tags": [
-        "react",
-        "hooks",
-        "single-responsibility",
-        "SOLID"
-      ],
-      "stacks": [
-        "react",
-        "react-native"
-      ],
-      "contexts": [
-        "hooks",
-        "component-design"
-      ],
+      "status": "active", "impact": "medium",
+      "tags": ["react", "hooks", "single-responsibility", "SOLID"],
+      "stacks": ["react", "react-native"], "contexts": ["hooks", "component-design"],
       "date": "2026-02-27"
     },
     {
@@ -442,22 +268,9 @@
       "type": "decision",
       "title": "Refactoring incremental — nunca big bang",
       "path": "decisions/2026-02-24_incremental-refactoring-never-big-bang.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "refactoring",
-        "process",
-        "risk-management",
-        "incremental"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "refactoring",
-        "process",
-        "team"
-      ],
+      "status": "active", "impact": "high",
+      "tags": ["refactoring", "process", "risk-management", "incremental"],
+      "stacks": ["universal"], "contexts": ["refactoring", "process", "team"],
       "date": "2026-02-24"
     },
     {
@@ -465,46 +278,39 @@
       "type": "decision",
       "title": "Checklist de regressão adaptativo como artefato vivo",
       "path": "decisions/2026-02-24_regression-checklist-as-living-artifact.md",
-      "status": "active",
-      "impact": "medium",
-      "tags": [
-        "testing",
-        "regression",
-        "checklist",
-        "process",
-        "CI-CD"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "testing",
-        "process",
-        "quality"
-      ],
+      "status": "active", "impact": "medium",
+      "tags": ["testing", "regression", "checklist", "process", "CI-CD"],
+      "stacks": ["universal"], "contexts": ["testing", "process", "quality"],
       "date": "2026-02-24"
+    },
+    {
+      "id": "code-templates-by-artifact",
+      "type": "decision",
+      "title": "Templates de código — referência rápida por tipo de artefato",
+      "path": "decisions/2026-02-27_code-templates-by-artifact.md",
+      "status": "active", "impact": "medium",
+      "tags": ["templates", "scaffolding", "clean-architecture", "conventions", "onboarding"],
+      "stacks": ["react", "typescript"], "contexts": ["scaffolding", "architecture", "conventions"],
+      "date": "2026-02-27"
+    },
+    {
+      "id": "testing-strategy-adapted-pyramid",
+      "type": "decision",
+      "title": "Estratégia de testes — pirâmide adaptada para frontend moderno",
+      "path": "decisions/2026-02-27_testing-strategy-adapted-pyramid.md",
+      "status": "active", "impact": "high",
+      "tags": ["testing", "strategy", "integration-tests", "e2e", "accessibility", "playwright"],
+      "stacks": ["react", "typescript", "universal"], "contexts": ["testing", "quality", "CI-CD"],
+      "date": "2026-02-27"
     },
     {
       "id": "documentation-as-first-class-artifact",
       "type": "decision",
       "title": "Documentação arquitetural como artefato de primeira classe",
       "path": "decisions/2026-03-04_documentation-as-first-class-artifact.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "documentation",
-        "guidelines",
-        "architecture",
-        "knowledge-management"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "team",
-        "process",
-        "governance"
-      ],
+      "status": "active", "impact": "high",
+      "tags": ["documentation", "guidelines", "architecture", "knowledge-management"],
+      "stacks": ["universal"], "contexts": ["team", "process", "governance"],
       "date": "2026-03-04"
     },
     {
@@ -512,164 +318,59 @@
       "type": "decision",
       "title": "Nomenclatura de smoke tests por arquivo-alvo",
       "path": "decisions/2026-03-04_smoke-test-naming-convention.md",
-      "status": "active",
-      "impact": "medium",
-      "tags": [
-        "testing",
-        "smoke-tests",
-        "naming",
-        "conventions"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "testing",
-        "conventions"
-      ],
+      "status": "active", "impact": "medium",
+      "tags": ["testing", "smoke-tests", "naming", "conventions"],
+      "stacks": ["universal"], "contexts": ["testing", "conventions"],
       "date": "2026-03-04"
     },
     {
-      "id": "testing-strategy-adapted-pyramid",
+      "id": "ui-component-decomposition-by-visual-scope",
       "type": "decision",
-      "title": "Estratégia de testes — pirâmide adaptada para frontend moderno",
-      "path": "decisions/2026-02-27_testing-strategy-adapted-pyramid.md",
-      "status": "active",
-      "impact": "high",
-      "tags": [
-        "testing",
-        "strategy",
-        "integration-tests",
-        "e2e",
-        "accessibility",
-        "playwright"
-      ],
-      "stacks": [
-        "universal"
-      ],
-      "contexts": [
-        "testing",
-        "quality",
-        "CI-CD"
-      ],
-      "date": "2026-02-27"
-    },
-    {
-      "id": "code-templates-by-artifact",
-      "type": "decision",
-      "title": "Templates de código — referência rápida por tipo de artefato",
-      "path": "decisions/2026-02-27_code-templates-by-artifact.md",
-      "status": "active",
-      "impact": "medium",
-      "tags": [
-        "templates",
-        "scaffolding",
-        "clean-architecture",
-        "conventions",
-        "onboarding"
-      ],
-      "stacks": [
-        "react",
-        "typescript"
-      ],
-      "contexts": [
-        "scaffolding",
-        "architecture",
-        "conventions"
-      ],
-      "date": "2026-02-27"
+      "title": "Separação UI → componentes de apresentação com prefixo de escopo",
+      "path": "decisions/2026-03-08_ui-component-decomposition-by-visual-scope.md",
+      "status": "active", "impact": "high",
+      "tags": ["react", "components", "decomposition", "SRP", "presentation-components", "naming"],
+      "stacks": ["react"], "contexts": ["component-design", "architecture", "refactoring"],
+      "date": "2026-03-08"
     },
     {
       "id": "clean-architecture-react",
-      "type": "implementation",
+      "type": "decision",
       "title": "Clean Architecture — implementação React/TypeScript/Vite",
-      "file": "implementations/react/clean-architecture-react.md",
-      "stacks": [
-        "react",
-        "typescript"
-      ],
-      "tags": [
-        "clean-architecture",
-        "react",
-        "typescript",
-        "vite",
-        "scaffolding"
-      ],
-      "contexts": [
-        "architecture",
-        "project-structure",
-        "scaffolding"
-      ],
-      "impact": "high",
-      "status": "active",
-      "parent": "clean-architecture-layers"
+      "path": "implementations/react/clean-architecture-react.md",
+      "status": "active", "impact": "high",
+      "tags": ["clean-architecture", "react", "typescript", "vite", "hooks", "context"],
+      "stacks": ["react", "typescript"], "contexts": ["architecture", "project-structure", "scaffolding"],
+      "date": "2026-02-27"
     },
     {
       "id": "testing-strategy-react",
-      "type": "implementation",
-      "title": "Estratégia de testes — React com Vitest, RTL e Playwright",
-      "file": "implementations/react/testing-strategy-react.md",
-      "stacks": [
-        "react",
-        "typescript"
-      ],
-      "tags": [
-        "testing",
-        "vitest",
-        "testing-library",
-        "playwright"
-      ],
-      "contexts": [
-        "testing",
-        "quality",
-        "CI-CD"
-      ],
-      "impact": "high",
-      "status": "active",
-      "parent": "testing-strategy-adapted-pyramid"
-    },
-    {
-      "id": "reentry-guard-typescript",
-      "type": "implementation",
-      "title": "Reentry Guard — implementação TypeScript com generics",
-      "file": "implementations/typescript/reentry-guard-typescript.md",
-      "stacks": [
-        "typescript"
-      ],
-      "tags": [
-        "typescript",
-        "recursion-guard",
-        "generics",
-        "canvas"
-      ],
-      "contexts": [
-        "canvas",
-        "transformation",
-        "event-handlers"
-      ],
-      "impact": "medium",
-      "status": "active",
-      "parent": "reentry-guard"
+      "type": "decision",
+      "title": "Estratégia de testes — React/TypeScript com Vitest, RTL e Playwright",
+      "path": "implementations/react/testing-strategy-react.md",
+      "status": "active", "impact": "high",
+      "tags": ["testing", "react", "vitest", "testing-library", "playwright", "typescript"],
+      "stacks": ["react", "typescript"], "contexts": ["testing", "quality", "CI-CD"],
+      "date": "2026-02-27"
     }
   ],
   "stats": {
-    "total": 24,
+    "total": 36,
     "byType": {
       "principle": 7,
-      "pattern": 4,
-      "refactoring": 6,
-      "decision": 7
+      "pattern": 7,
+      "refactoring": 10,
+      "decision": 12
     },
     "byImpact": {
-      "high": 18,
-      "medium": 6
+      "high": 27,
+      "medium": 9
     },
     "byStack": {
-      "universal": 15,
-      "react": 7,
-      "typescript": 3,
-      "react-native": 3
+      "universal": 18,
+      "react": 16,
+      "typescript": 9,
+      "react-native": 5
     }
-  },
-  "total": 27
+  }
 }

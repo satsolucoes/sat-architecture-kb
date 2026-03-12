@@ -22,23 +22,19 @@ Sincronizar múltiplas props com refs usando um `useEffect` por prop cria:
 ## Anti-padrão identificado
 
 ```typescript
-// ❌ 6 useEffects fazendo apenas ref.current = prop
-function useContraventamentoRefs(props: Props) {
-  const pilotiRef = useRef(props.piloti);
-  const canvasRef = useRef(props.canvas);
-  const viewRef = useRef(props.view);
-  const modeRef = useRef(props.mode);
+// ❌ N useEffects fazendo apenas ref.current = prop
+function useComponentRefs(props: Props) {
+  const valueARef = useRef(props.valueA);
+  const valueBRef = useRef(props.valueB);
   const onSelectRef = useRef(props.onSelect);
   const onCancelRef = useRef(props.onCancel);
 
-  useEffect(() => { pilotiRef.current = props.piloti; }, [props.piloti]);
-  useEffect(() => { canvasRef.current = props.canvas; }, [props.canvas]);
-  useEffect(() => { viewRef.current = props.view; }, [props.view]);
-  useEffect(() => { modeRef.current = props.mode; }, [props.mode]);
+  useEffect(() => { valueARef.current = props.valueA; }, [props.valueA]);
+  useEffect(() => { valueBRef.current = props.valueB; }, [props.valueB]);
   useEffect(() => { onSelectRef.current = props.onSelect; }, [props.onSelect]);
   useEffect(() => { onCancelRef.current = props.onCancel; }, [props.onCancel]);
-  // + 3 useEffects com lógica real de sincronização
-  // Total: 9 useEffects para o que poderia ser muito menos
+  // + useEffects com lógica real de sincronização
+  // Resultado: muitos effects para o que poderia ser bem menos
 }
 ```
 
@@ -53,16 +49,14 @@ export function useLatest<T>(value: T): RefObject<T> {
   return ref;
 }
 
-// Uso: 6 linhas no lugar de 12
-function useContraventamentoRefs(props: Props) {
-  const pilotiRef = useLatest(props.piloti);
-  const canvasRef = useLatest(props.canvas);
-  const viewRef = useLatest(props.view);
-  const modeRef = useLatest(props.mode);
+// Uso: metade das linhas, sem effects triviais
+function useComponentRefs(props: Props) {
+  const valueARef = useLatest(props.valueA);
+  const valueBRef = useLatest(props.valueB);
   const onSelectRef = useLatest(props.onSelect);
   const onCancelRef = useLatest(props.onCancel);
 
-  // Apenas os 3 useEffects com lógica real permanecem
+  // Apenas os useEffects com lógica real permanecem
 }
 ```
 
@@ -70,10 +64,10 @@ function useContraventamentoRefs(props: Props) {
 
 ```typescript
 // Quando as refs são sempre usadas juntas
-function useContraventamentoRefs(props: Props) {
+function useComponentRefs(props: Props) {
   const refs = useRef(props);
 
-  // Um único useEffect no lugar de 6
+  // Um único useEffect no lugar de N
   useEffect(() => {
     refs.current = props;
   }); // sem deps = sempre atualiza após render (seguro para funções/handlers)
@@ -100,10 +94,6 @@ function useContraventamentoRefs(props: Props) {
 
 - React e React Native: idêntico
 - Qualquer padrão que sincroniza "valor mais recente" com closure/callback estável
-
-## Referências
-
-- Origem: analysis-report 2026-02-27 (9 useEffects em useContraventamentoRefs)
 
 ### Links KB
 

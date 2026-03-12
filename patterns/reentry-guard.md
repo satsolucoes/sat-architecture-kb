@@ -7,7 +7,7 @@ date: 2026-02-23
 tags: [design-patterns, recursion-guard, DRY, event-handlers, callbacks]
 applies_to:
   stacks: [universal]
-  contexts: [canvas, animation, transformation, event-handlers, observers]
+  contexts: [transformation, event-handlers, observers, animation]
 outcome: validated
 ---
 
@@ -46,24 +46,24 @@ function withReentryGuard(target, guardKey, fn):
 
 ```
 // ❌ Antes: padrão duplicado em N lugares
-normalizeLineScaling(obj):
+normalizeScalingA(obj):
   if obj.__normalizing: return
   obj.__normalizing = true
-  try: normalize(obj, 'line')
+  try: normalize(obj, 'typeA')
   finally: obj.__normalizing = false
 
-normalizeArrowScaling(obj):
+normalizeScalingB(obj):
   if obj.__normalizing: return     // duplicado
   obj.__normalizing = true         // duplicado
-  try: normalize(obj, 'arrow')
+  try: normalize(obj, 'typeB')
   finally: obj.__normalizing = false  // duplicado
 
 // ✅ Depois: guard centralizado, lógica específica injetada
-normalizeLineScaling(obj):
-  withReentryGuard(obj, '__normalizing', (o) => normalize(o, 'line'))
+normalizeScalingA(obj):
+  withReentryGuard(obj, '__normalizing', (o) => normalize(o, 'typeA'))
 
-normalizeArrowScaling(obj):
-  withReentryGuard(obj, '__normalizing', (o) => normalize(o, 'arrow'))
+normalizeScalingB(obj):
+  withReentryGuard(obj, '__normalizing', (o) => normalize(o, 'typeB'))
 ```
 
 ## Quando aplicar
@@ -71,7 +71,7 @@ normalizeArrowScaling(obj):
 - Callbacks que modificam o objeto que disparou o evento
 - Observers/listeners que precisam ser idempotentes durante execução
 - Qualquer fluxo onde reentrada causaria loop ou estado inconsistente
-- Scaling, transformação, atualização de layout em sistemas de canvas
+- Transformações, normalização de layout, processamento de eventos encadeados
 
 ## Quando NÃO aplicar
 
@@ -92,21 +92,14 @@ normalizeArrowScaling(obj):
 
 ## Implementações por stack
 
-- `implementations/react/` — não se aplica diretamente (React não usa este padrão)
-- `implementations/typescript/reentry-guard.md` — implementação TypeScript com generics
-- `implementations/kotlin/` ← (quando chegar)
-- `implementations/java/` ← AtomicBoolean, synchronized
+- `implementations/typescript/reentry-guard-typescript.md` — implementação com generics
+- `implementations/java/` ← AtomicBoolean, synchronized (quando chegar)
 
 ## Lições aprendidas
 
 - O `finally` é o detalhe crítico — sem ele, qualquer exception deixa o guard travado
 - O nome da flag deve descrever o que está sendo guardado, não apenas sinalizar "ocupado"
-- Identificar este padrão duplicado exigiu análise cross-arquivo — vale adicionar ao code review checklist
-
-## Referências
-
-- Origem: refactoring-plan.md (Abstração de Padrões, 2026-02-23)
-- Origem: analysis-report.md (Duplicação detectada em 4 strategies, 2026-02-27)
+- Identificar este padrão duplicado exige análise cross-arquivo — vale adicionar ao code review checklist
 
 ### Links KB
 

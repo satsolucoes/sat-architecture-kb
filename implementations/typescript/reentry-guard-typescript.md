@@ -4,10 +4,10 @@ title: Reentry Guard — implementação TypeScript com generics
 status: active
 impact: medium
 date: 2026-02-23
-tags: [typescript, recursion-guard, generics, DRY, canvas, fabric]
+tags: [typescript, recursion-guard, generics, DRY, event-handlers]
 applies_to:
   stacks: [typescript]
-  contexts: [canvas, transformation, event-handlers]
+  contexts: [transformation, event-handlers, observers]
 parent_pattern: patterns/reentry-guard.md
 outcome: validated
 ---
@@ -35,28 +35,32 @@ export function withReentryGuard<T extends GuardableObject>(
 }
 ```
 
-## Uso com Fabric.js (canvas)
+## Exemplo de uso
 
 ```typescript
-// src/infra/canvas/strategies/line.strategy.ts
 import { withReentryGuard } from '@/shared/with-reentry-guard';
-import type { FabricObject } from 'fabric';
 
 // ❌ Antes: guard duplicado em cada função
-function normalizeLineScaling(obj: FabricObject) {
+function normalizeScalingA(obj: SomeObject) {
   if ((obj as any).__normalizing) return;
   (obj as any).__normalizing = true;
   try {
-    obj.set({ scaleX: 1, scaleY: 1, width: obj.width! * obj.scaleX! });
+    applyNormalization(obj, 'typeA');
   } finally {
     (obj as any).__normalizing = false;
   }
 }
 
 // ✅ Depois: lógica específica, guard centralizado
-function normalizeLineScaling(obj: FabricObject) {
+function normalizeScalingA(obj: SomeObject) {
   withReentryGuard(obj, '__normalizingScale', (o) => {
-    o.set({ scaleX: 1, scaleY: 1, width: o.width! * o.scaleX! });
+    applyNormalization(o, 'typeA');
+  });
+}
+
+function normalizeScalingB(obj: SomeObject) {
+  withReentryGuard(obj, '__normalizingScale', (o) => {
+    applyNormalization(o, 'typeB');
   });
 }
 ```
@@ -93,11 +97,9 @@ describe('withReentryGuard (smoke)', () => {
   it('blocks reentrant calls', () => {
     const obj: any = {};
     const fn = vi.fn((target) => {
-      // simula reentrada durante execução
       withReentryGuard(target, '__guard', vi.fn());
     });
     withReentryGuard(obj, '__guard', fn);
-    // fn externa executou 1x, reentrada bloqueada
     expect(fn).toHaveBeenCalledOnce();
   });
 
@@ -110,12 +112,6 @@ describe('withReentryGuard (smoke)', () => {
   });
 });
 ```
-
-## Referências
-
-- Padrão base: patterns/reentry-guard.md
-- Origem: refactoring-plan.md (2026-02-23)
-- Origem: analysis-report.md (duplicação detectada em 4 strategies)
 
 ### Links KB
 
